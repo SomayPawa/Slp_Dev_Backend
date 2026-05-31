@@ -15,7 +15,11 @@ public class EmailService {
 
         SimpleMailMessage mail = new SimpleMailMessage();
 
+        mail.setFrom("somaypawa@gmail.com");
+
+        // This is where the email will be sent TO
         mail.setTo("somaypawa@gmail.com");
+
         mail.setSubject("New Contact Form Submission");
 
         mail.setText(
